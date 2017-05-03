@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="EUC-KR" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR" />
+<title>Insert title here</title>
+<script type="text/javascript">
+	function fnZipSearch(){
+		window.open("zipSearch.jsp", "post", "width=500, height=300, menubar=no, status=no, toolbar=0, left=300, top=300, scrollbar=yes")
+	}
+</script>
+</head>
+<body>
+<h1>회원 가입</h1>
+<form name="f">
+	우편 번호 : <input type="text" name="zip" size="7" maxlength="7" />
+	<input type="button" value="우편번호 검색" onclick="fnZipSearch()"/><br/><br/>
+	
+	기본 주소 : <input type="text" name="addr1" readonly/><br/><br/>
+	상세 주소 : <input type="text" name="addr2"/>
+</form>
+</body>
+</html>
